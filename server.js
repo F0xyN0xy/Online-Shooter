@@ -40,7 +40,7 @@ io.on("connection", (socket) => {
         // send current map
         socket.emit("mapData", rooms[roomName].map);
 
-        // Spieler-Positionen senden
+        // Send player positions
         io.to(roomName).emit("currentPlayers", rooms[roomName].players);
 
         // List of all rooms
