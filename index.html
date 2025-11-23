@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>2D Shooter Lobby</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js" defer></script>
+</head>
+<body>
+    <div id="lobby">
+        <h1>2D Shooter Lobby</h1>
+        <input type="text" id="roomInput" placeholder="Room Name">
+        <button id="joinBtn">Join / Create</button>
+        <div id="roomList"></div>
+    </div>
+
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600" style="border:1px solid #000;"></canvas>
+        <button id="leaveBtn">Leave Room</button>
+    </div>
+</body>
+</html>
